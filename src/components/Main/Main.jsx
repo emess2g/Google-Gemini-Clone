@@ -15,8 +15,8 @@ const Main = () => {
             <p><span>Hello, Dev</span></p>
             <p>How can i help you?</p>
         </div>
-      </div>
-      <div className="cards">
+
+        <div className="cards">
         <div className="card">
             <p>Suggest beautiful places to see on an uocoming road trip</p>
             <img src={assets.compass_icon} alt="" />
@@ -33,6 +33,7 @@ const Main = () => {
             <p>Improve the readability of the following code</p>
             <img src={assets.code_icon} alt="" />
         </div>
+      </div>
       </div>
     </div>
   )
