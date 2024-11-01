@@ -11,10 +11,16 @@ const ContextProvider = (props) => {
     const [prevPrompts,setPrevPrompts] = useState([]);
     const [showResult,setShowResult] = useState(false);
     const [loading,setLoading] = useState(false);
-    const [resultData,ResultData] = useState("")
+    const [resultData,setResultData] = useState("")
 
     const onSent = async(prompt) => {
-        await run(input) // input prompt
+        setResultData("")
+        setLoading(true);
+        setShowResult(true)
+        const response = await run(input) // input prompt
+        setResultData(response);
+        setLoading(false);
+        setInput("")
     }
 
 
