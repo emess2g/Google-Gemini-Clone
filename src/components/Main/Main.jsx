@@ -40,11 +40,11 @@ const Main = () => {
             <input type="text" placeholder='Enter prompt here ' />
             <div>
                 <img src={assets.gallery_icon} alt="" />
-                <img src={assets.mic_icon_icon} alt="" />
+                <img src={assets.mic_icon} alt="" />
                 <img src={assets.send_icon} alt="" />
             </div>
         </div>
-        <p className="bottom info">Gemini may display inaccurate info, including about people, so double-check its response Your privacy and Gemini Apps</p>
+        <p className="bottom-info">Gemini may display inaccurate info, including about people, so double-check its response Your privacy and Gemini pps</p>
       </div>
       </div>
     </div>
