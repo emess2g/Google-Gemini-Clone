@@ -2,7 +2,7 @@ import { createContext } from "react";
 import run from "../config/gemini";
 
 
-export const context = createContext()
+export const Context = createContext()
 
 const ContextProvider = (props) => {
 
@@ -10,16 +10,16 @@ const ContextProvider = (props) => {
         await run(prompt)
     }
 
-    onSent('what is react js')
+    onSent('what is react js?')
 
     const contextValue = {
 
     }
 
     return (
-        <ContextProvider value={contextValue}>
-            {props.childeren}
-        </ContextProvider>
+       <Context.Provider value={contextValue}>
+        {props.children}
+       </Context.Provider>
     )
 }
 
