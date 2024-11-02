@@ -180,3 +180,27 @@
     font-weight: 300;
     line-height: 1.8;
 }
+
+@media (max-width:600px) {
+    .main .greet{
+        margin: 10px 0px ;
+        font-size: 36px;
+        padding: 20px;
+    }
+    .main .card{
+        height: 150px;
+    }
+    .main-bottom input{
+        float: none;
+        width: 150px;
+    }
+    .main-bottom img {
+        width: 20px;
+    }
+    .search-box {
+        padding: 5px 10px ;
+    }
+    .search-box div{
+        gap: 5px;
+    }
+}
